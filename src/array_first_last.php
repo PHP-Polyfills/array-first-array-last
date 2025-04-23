@@ -10,7 +10,7 @@ if (\PHP_VERSION_ID >= 80000) {
      *   empty. Note that null itself can also be a valid array value.
      */
     function array_first(array $array): mixed {
-        return empty($array) ? null : $array[array_key_first($array)];
+        return $array === [] ? null : $array[array_key_first($array)];
     }
 
     /**
@@ -21,7 +21,7 @@ if (\PHP_VERSION_ID >= 80000) {
      *   empty. Note that null itself can also be a valid array value.
      */
     function array_last(array $array): mixed {
-        return empty($array) ? null : $array[array_key_last($array)];
+        return $array === [] ? null : $array[array_key_last($array)];
     }
 }
 else {
@@ -33,7 +33,7 @@ else {
      *   empty. Note that null itself can also be a valid array value.
      */
     function array_first(array $array) {
-        return empty($array) ? null : $array[array_key_first($array)];
+        return $array === [] ? null : $array[array_key_first($array)];
     }
 
     /**
@@ -44,6 +44,6 @@ else {
      *   empty. Note that null itself can also be a valid array value.
      */
     function array_last(array $array) {
-        return empty($array) ? null : $array[array_key_last($array)];
+        return $array === [] ? null : $array[array_key_last($array)];
     }
 }
