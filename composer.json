@@ -1,0 +1,28 @@
+{
+    "name": "polyfills/array-first-array-last",
+    "description": "PHP: Provides a user-land polyfill for `array_first` and `array_last` functions added in PHP 8.5.",
+    "type": "library",
+    "homepage": "https://php.watch/versions/8.5/array_first-array_last",
+    "keywords": ["php85", "phpwatch", "polyfills", "polyfill", "compatibility", "compat", "shim"],
+    "require": {
+        "php": "^7.3 || ^8.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.3|^6.0"
+    },
+    "conflict": {
+        "php": "^8.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/array_first_last.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ayesh Karunaratne",
+            "email": "ayesh@aye.sh"
+        }
+    ]
+}
