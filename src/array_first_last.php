@@ -14,10 +14,10 @@ if (\PHP_VERSION_ID >= 80000) {
     }
 
     /**
-     * Returns the first value of a given array.
+     * Returns the last value of a given array.
      *
-     * @param array $array The array to get the first value of.
-     * @return mixed First value of the array, or null if the array is
+     * @param array $array The array to get the last value of.
+     * @return mixed Last value of the array, or null if the array is
      *   empty. Note that null itself can also be a valid array value.
      */
     function array_last(array $array): mixed {
@@ -37,10 +37,10 @@ else {
     }
 
     /**
-     * Returns the first value of a given array.
+     * Returns the last value of a given array.
      *
-     * @param array $array The array to get the first value of.
-     * @return mixed First value of the array, or null if the array is
+     * @param array $array The array to get the last value of.
+     * @return mixed Last value of the array, or null if the array is
      *   empty. Note that null itself can also be a valid array value.
      */
     function array_last(array $array) {
